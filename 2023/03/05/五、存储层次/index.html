@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+
+
+  <meta name="generator" content="Hexo 6.3.0">
+
+  
+
+  
+
+  
+    <meta name="author" content="Qiao">
+  
+
+  
+
+  
+
+  <title>五、存储层次 | Qiao&#39;s Blog</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="alternate" href="/atom.xml" title="Qiao's Blog" type="application/atom+xml">
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Qiao&#39;s Blog
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags/%E6%97%85%E8%A1%8C">旅行</a></li>
+        
+          <li class="navbar-list-item"><a href="/archives">归档</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">友链</a></li>
+        
+          <li class="navbar-list-item"><a href="/messages">留言板</a></li>
+        
+          <li class="navbar-list-item"><a href="/about/me">关于我</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">五、存储层次</h1>
+          <h2 class="title-sub-wrap">
+            <strong>Qiao</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2023-03-05T13:23:10.000Z" itemprop="datePublished">2023-03-05</time>
+          </h2>
+          
+          
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">📒 计算机体系结构</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">🏷️ 计算机体系结构</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="存储层次"><a href="#存储层次" class="headerlink" title="存储层次"></a>存储层次</h1><h2 id="存储器的存储层析"><a href="#存储器的存储层析" class="headerlink" title="存储器的存储层析"></a>存储器的存储层析</h2><h3 id="Cache-主存层次"><a href="#Cache-主存层次" class="headerlink" title="Cache-主存层次"></a>Cache-主存层次</h3><blockquote>
+<p>弥补主存速度的不足</p>
+</blockquote>
+<h3 id="主存-辅存层次"><a href="#主存-辅存层次" class="headerlink" title="主存-辅存层次"></a>主存-辅存层次</h3><blockquote>
+<p>弥补主存容量的不足</p>
+</blockquote>
+<h2 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h2><h3 id="映象规则"><a href="#映象规则" class="headerlink" title="映象规则"></a>映象规则</h3><h4 id="全相连映象"><a href="#全相连映象" class="headerlink" title="全相连映象"></a>全相连映象</h4><blockquote>
+<p>主存中的任意一个块可以被放置到Cache中的任意一个位置</p>
+</blockquote>
+<ul>
+<li>特点：空间利用率最高，冲突概率最低，实现最复杂</li>
+</ul>
+<h4 id="直接映象"><a href="#直接映象" class="headerlink" title="直接映象"></a>直接映象</h4><blockquote>
+<p>主存中的每一块只能被放置到Cache中的唯一的一个位置</p>
+</blockquote>
+<ul>
+<li>特点：空间利用率最低，冲突概率最高，实现最简单</li>
+</ul>
+<h4 id="组相连映象"><a href="#组相连映象" class="headerlink" title="组相连映象"></a>组相连映象</h4><blockquote>
+<p>主存中的每一块只能被放置到Cache中的唯一的一个组中的任意一个位置</p>
+</blockquote>
+<h5 id="n路组相联"><a href="#n路组相联" class="headerlink" title="n路组相联"></a>n路组相联</h5><p>每组中有n个块，n称为相联度。相联度越高，Cache空间利用率就越高，块冲突率就越低，失效率也就越低。</p>
+<h3 id="查找方法"><a href="#查找方法" class="headerlink" title="查找方法"></a>查找方法</h3><blockquote>
+<p>使用目录表记录映射关系</p>
+</blockquote>
+<h3 id="写策略"><a href="#写策略" class="headerlink" title="写策略"></a>写策略</h3><ul>
+<li>写操作必须在确认是否命中后才可以进行</li>
+<li>写访问有可能导致Cache和主存内容的不一致</li>
+</ul>
+<h4 id="写直达法"><a href="#写直达法" class="headerlink" title="写直达法"></a>写直达法</h4><blockquote>
+<p>执行写操作时，不仅写入Cache,而且也写入下一级存储器</p>
+</blockquote>
+<h4 id="写回法"><a href="#写回法" class="headerlink" title="写回法"></a>写回法</h4><blockquote>
+<p>执行写操作时，只写入Cache.仅当Cache中相应的块被替换时，才写回主存。</p>
+</blockquote>
+<h4 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h4><h5 id="写回法优点"><a href="#写回法优点" class="headerlink" title="写回法优点"></a>写回法优点</h5><p>速度快，占用存储器频带低</p>
+<h5 id="写直达法-1"><a href="#写直达法-1" class="headerlink" title="写直达法"></a>写直达法</h5><p>易于实现，一致性好</p>
+<h4 id="写合并"><a href="#写合并" class="headerlink" title="写合并"></a>写合并</h4><blockquote>
+<p>当把数据写入写缓冲器时，判断本次所写入单元的块地址是否与写缓冲器中某个有效块的地址相同，若是，则把新数据与该块合并。</p>
+</blockquote>
+<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><h4 id="平均访问时间"><a href="#平均访问时间" class="headerlink" title="平均访问时间"></a>平均访问时间</h4><p>$$<br>平均访问时间 &#x3D; 命中时间 + 失效率 \times 失效开销<br>$$</p>
+<h4 id="改进Cache性能"><a href="#改进Cache性能" class="headerlink" title="改进Cache性能"></a>改进Cache性能</h4><ul>
+<li>降低失效率</li>
+<li>降低失效开销</li>
+<li>减少命中时间</li>
+</ul>
+<h5 id="降低Cache失效率的方法"><a href="#降低Cache失效率的方法" class="headerlink" title="降低Cache失效率的方法"></a>降低Cache失效率的方法</h5><h6 id="三种失效"><a href="#三种失效" class="headerlink" title="三种失效"></a>三种失效</h6><ol>
+<li><p>强制性失效</p>
+<blockquote>
+<p>当第一次访问一个块时，该块不再Cache中，需从下一级存储器中调入Cache。</p>
+</blockquote>
+</li>
+<li><p>容量失效</p>
+<blockquote>
+<p>如果程序执行时所需的块不能全部调入Cache中，则当某些块被替换后，若又重新被访问，就会发生失效。</p>
+</blockquote>
+</li>
+<li><p>冲突失效</p>
+<blockquote>
+<p>在组相联或直接映像Cache中，若太多的块映像到同一组（块）中，则会出现该组中某个块被别的块替换（即使别的组或块有空闲位置），然后又被重新访问的情况。</p>
+</blockquote>
+</li>
+</ol>
+<h6 id="规律"><a href="#规律" class="headerlink" title="规律"></a>规律</h6><ul>
+<li>相联度越高，冲突失效就越少</li>
+<li>强制性失效不受Cache容量的影响，但容量失效却随着容量的增加而减少；强制性失效和容量失效不受相联度的影响。</li>
+</ul>
+<h6 id="减少三种失效的方法"><a href="#减少三种失效的方法" class="headerlink" title="减少三种失效的方法"></a>减少三种失效的方法</h6><ul>
+<li>强制性失效<ul>
+<li>增加块大小，预取</li>
+</ul>
+</li>
+<li>容量失效<ul>
+<li>增加容量</li>
+</ul>
+</li>
+<li>冲突失效<ul>
+<li>提高相联度</li>
+</ul>
+</li>
+</ul>
+<h6 id="编译优化"><a href="#编译优化" class="headerlink" title="编译优化"></a>编译优化</h6><p><img src="/2023/03/05/%E4%BA%94%E3%80%81%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1/image-20230207203504996.png" alt="image-20230207203504996"></p>
+<p><img src="/2023/03/05/%E4%BA%94%E3%80%81%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1/image-20230207203544754.png" alt="image-20230207203544754"></p>
+<img src="image-20230207203643762.png" alt="image-20230207203643762"  />
+
+<p><img src="/2023/03/05/%E4%BA%94%E3%80%81%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1/image-20230207203806275.png" alt="image-20230207203806275"></p>
+<h5 id="减少失效开销"><a href="#减少失效开销" class="headerlink" title="减少失效开销"></a>减少失效开销</h5><p><img src="/2023/03/05/%E4%BA%94%E3%80%81%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1/image-20230305212524411.png" alt="image-20230305212524411"></p>
+<h5 id="减少命中时间"><a href="#减少命中时间" class="headerlink" title="减少命中时间"></a>减少命中时间</h5><ol>
+<li>使用容量小、结构简单的Cache</li>
+<li>虚拟Cache</li>
+</ol>
+<h2 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h2><h3 id="存储器组织技术"><a href="#存储器组织技术" class="headerlink" title="存储器组织技术"></a>存储器组织技术</h3><h4 id="低位交叉编址"><a href="#低位交叉编址" class="headerlink" title="低位交叉编址"></a>低位交叉编址</h4><h4 id="高位交叉编址"><a href="#高位交叉编址" class="headerlink" title="高位交叉编址"></a>高位交叉编址</h4><h4 id="多体交叉编址"><a href="#多体交叉编址" class="headerlink" title="多体交叉编址"></a>多体交叉编址</h4><h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3>
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2023/03/05/%E5%85%AD%E3%80%81IO%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">六、IO与操作系统</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2023/03/05/%E5%9B%9B%E3%80%81%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">四、指令的动态调度</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+    
+      <h2>Qiao</h2>
+    
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>11</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        5
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        5
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%8B%87%E5%A3%AB/">
+            勇士 (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">
+            计算机体系结构 (7)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%AE%89%E8%A3%85/">
+            安装 (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%AE%A5%E5%AE%A5/">
+            宥宥 (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/">
+            操作系统笔记 (1)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/%E5%8B%87%E5%A3%AB/" style="font-size: 10px;" class="tags-cloud-0">勇士</a> <a href="/tags/%E5%AE%89%E8%A3%85/" style="font-size: 10px;" class="tags-cloud-0">安装</a> <a href="/tags/%E5%AE%A5%E5%AE%A5/" style="font-size: 10px;" class="tags-cloud-0">宥宥</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/" style="font-size: 10px;" class="tags-cloud-0">操作系统笔记</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 20px;" class="tags-cloud-10">计算机体系结构</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/miiiku/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+          <a href="https://twitter.com/guanquanhong" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-twitter" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M962.285714 233.142857q-38.285714 56-92.571429 95.428571 0.571429 8 0.571429 24 0 74.285714-21.714286 148.285714t-66 142-105.428571 120.285714-147.428571 83.428571-184.571429 31.142857q-154.857143 0-283.428571-82.857143 20 2.285714 44.571429 2.285714 128.571429 0 229.142857-78.857143-60-1.142857-107.428571-36.857143t-65.142857-91.142857q18.857143 2.857143 34.857143 2.857143 24.571429 0 48.571429-6.285714-64-13.142857-106-63.714286t-42-117.428571l0-2.285714q38.857143 21.714286 83.428571 23.428571-37.714286-25.142857-60-65.714286t-22.285714-88q0-50.285714 25.142857-93.142857 69.142857 85.142857 168.285714 136.285714t212.285714 56.857143q-4.571429-21.714286-4.571429-42.285714 0-76.571429 54-130.571429t130.571429-54q80 0 134.857143 58.285714 62.285714-12 117.142857-44.571429-21.142857 65.714286-81.142857 101.714286 53.142857-5.714286 106.285714-28.571429z"></path>
+</svg>
+          </a>
+        
+      
+    </div>
+     
+    <p>&copy; 2023 <a href="/" target="_blank">Qiao</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>

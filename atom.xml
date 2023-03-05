@@ -6,7 +6,7 @@
   <link href="https://codeqiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://codeqiao.github.io/"/>
-  <updated>2023-03-05T11:56:46.885Z</updated>
+  <updated>2023-03-05T13:33:22.111Z</updated>
   <id>https://codeqiao.github.io/</id>
   
   <author>
@@ -17,11 +17,186 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>七、多处理机</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E4%B8%83%E3%80%81%E5%A4%9A%E5%A4%84%E7%90%86%E6%9C%BA/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E4%B8%83%E3%80%81%E5%A4%9A%E5%A4%84%E7%90%86%E6%9C%BA/</id>
+    <published>2023-03-05T13:29:06.000Z</published>
+    <updated>2023-03-05T13:33:22.111Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;多处理机&quot;&gt;&lt;a href=&quot;#多处理机&quot; class=&quot;headerlink&quot; title=&quot;多处理机&quot;&gt;&lt;/a&gt;多处理机&lt;/h1&gt;&lt;h2 id=&quot;共享存储器体系结构&quot;&gt;&lt;a href=&quot;#共享存储器体系结构&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>六、IO与操作系统</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E5%85%AD%E3%80%81IO%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E5%85%AD%E3%80%81IO%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</id>
+    <published>2023-03-05T13:26:39.000Z</published>
+    <updated>2023-03-05T13:38:17.272Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;IO与操作系统&quot;&gt;&lt;a href=&quot;#IO与操作系统&quot; class=&quot;headerlink&quot; title=&quot;IO与操作系统&quot;&gt;&lt;/a&gt;IO与操作系统&lt;/h1&gt;&lt;h2 id=&quot;IO与Cache的一致性问题&quot;&gt;&lt;a href=&quot;#IO与Cache的一致性问题&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>五、存储层次</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E4%BA%94%E3%80%81%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E4%BA%94%E3%80%81%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A1/</id>
+    <published>2023-03-05T13:23:10.000Z</published>
+    <updated>2023-03-05T13:25:36.708Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;存储层次&quot;&gt;&lt;a href=&quot;#存储层次&quot; class=&quot;headerlink&quot; title=&quot;存储层次&quot;&gt;&lt;/a&gt;存储层次&lt;/h1&gt;&lt;h2 id=&quot;存储器的存储层析&quot;&gt;&lt;a href=&quot;#存储器的存储层析&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>四、指令的动态调度</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E5%9B%9B%E3%80%81%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E5%9B%9B%E3%80%81%E6%8C%87%E4%BB%A4%E7%9A%84%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6/</id>
+    <published>2023-03-05T13:21:33.000Z</published>
+    <updated>2023-03-05T13:22:07.045Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;指令的动态调度&quot;&gt;&lt;a href=&quot;#指令的动态调度&quot; class=&quot;headerlink&quot; title=&quot;指令的动态调度&quot;&gt;&lt;/a&gt;指令的动态调度&lt;/h1&gt;&lt;h2 id=&quot;动态调度的目的&quot;&gt;&lt;a href=&quot;#动态调度的目的&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三、流水线</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E4%B8%89%E3%80%81%E6%B5%81%E6%B0%B4%E7%BA%BF/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E4%B8%89%E3%80%81%E6%B5%81%E6%B0%B4%E7%BA%BF/</id>
+    <published>2023-03-05T13:04:33.000Z</published>
+    <updated>2023-03-05T13:36:38.380Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;流水线&quot;&gt;&lt;a href=&quot;#流水线&quot; class=&quot;headerlink&quot; title=&quot;流水线&quot;&gt;&lt;/a&gt;流水线&lt;/h1&gt;&lt;h2 id=&quot;MIPS的一种简单实现&quot;&gt;&lt;a href=&quot;#MIPS的一种简单实现&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二、指令</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E4%BA%8C%E3%80%81%E6%8C%87%E4%BB%A4/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E4%BA%8C%E3%80%81%E6%8C%87%E4%BB%A4/</id>
+    <published>2023-03-05T12:43:12.000Z</published>
+    <updated>2023-03-05T13:35:52.869Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;指令&quot;&gt;&lt;a href=&quot;#指令&quot; class=&quot;headerlink&quot; title=&quot;指令&quot;&gt;&lt;/a&gt;指令&lt;/h1&gt;&lt;h2 id=&quot;指令集与计算机的性能&quot;&gt;&lt;a href=&quot;#指令集与计算机的性能&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一、一些基本的概念</title>
+    <link href="https://codeqiao.github.io/2023/03/05/%E4%B8%80%E3%80%81%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A6%82%E5%BF%B5/"/>
+    <id>https://codeqiao.github.io/2023/03/05/%E4%B8%80%E3%80%81%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A6%82%E5%BF%B5/</id>
+    <published>2023-03-05T12:03:44.000Z</published>
+    <updated>2023-03-05T12:59:38.265Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一些基本的概念&quot;&gt;&lt;a href=&quot;#一些基本的概念&quot; class=&quot;headerlink&quot; title=&quot;一些基本的概念&quot;&gt;&lt;/a&gt;一些基本的概念&lt;/h1&gt;&lt;h2 id=&quot;存储程序计算机&quot;&gt;&lt;a href=&quot;#存储程序计算机&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机体系结构" scheme="https://codeqiao.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>勇士</title>
     <link href="https://codeqiao.github.io/2023/03/05/%E5%8B%87%E5%A3%AB/"/>
     <id>https://codeqiao.github.io/2023/03/05/%E5%8B%87%E5%A3%AB/</id>
     <published>2023-03-05T11:19:59.000Z</published>
-    <updated>2023-03-05T11:56:46.885Z</updated>
+    <updated>2023-03-05T13:03:12.451Z</updated>
     
     
       
@@ -38,10 +213,10 @@
     
     
     
-    <category term="娱乐" scheme="https://codeqiao.github.io/categories/%E5%A8%B1%E4%B9%90/"/>
+    <category term="勇士" scheme="https://codeqiao.github.io/categories/%E5%8B%87%E5%A3%AB/"/>
     
-    <category term="勇士" scheme="https://codeqiao.github.io/categories/%E5%A8%B1%E4%B9%90/%E5%8B%87%E5%A3%AB/"/>
     
+    <category term="勇士" scheme="https://codeqiao.github.io/tags/%E5%8B%87%E5%A3%AB/"/>
     
   </entry>
   
@@ -50,7 +225,7 @@
     <link href="https://codeqiao.github.io/2023/03/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/"/>
     <id>https://codeqiao.github.io/2023/03/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/</id>
     <published>2023-03-05T10:11:04.000Z</published>
-    <updated>2023-03-05T10:25:36.100Z</updated>
+    <updated>2023-03-05T13:03:35.285Z</updated>
     
     
       
@@ -63,10 +238,10 @@
     
     
     
-    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="操作系统笔记" scheme="https://codeqiao.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="课程学习" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
     
+    <category term="操作系统笔记" scheme="https://codeqiao.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -75,17 +250,17 @@
     <link href="https://codeqiao.github.io/2023/03/05/%E5%AE%A5%E5%AE%A5/"/>
     <id>https://codeqiao.github.io/2023/03/05/%E5%AE%A5%E5%AE%A5/</id>
     <published>2023-03-04T17:50:42.000Z</published>
-    <updated>2023-03-05T11:09:04.019Z</updated>
+    <updated>2023-03-05T13:02:47.731Z</updated>
     
     
     <summary type="html">有东西被加密了, 请输入密码查看.</summary>
     
     
     
-    <category term="照片" scheme="https://codeqiao.github.io/categories/%E7%85%A7%E7%89%87/"/>
+    <category term="宥宥" scheme="https://codeqiao.github.io/categories/%E5%AE%A5%E5%AE%A5/"/>
     
     
-    <category term="旅行" scheme="https://codeqiao.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="宥宥" scheme="https://codeqiao.github.io/tags/%E5%AE%A5%E5%AE%A5/"/>
     
   </entry>
   
@@ -94,7 +269,7 @@
     <link href="https://codeqiao.github.io/2023/03/04/Nodejs%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/"/>
     <id>https://codeqiao.github.io/2023/03/04/Nodejs%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/</id>
     <published>2023-03-04T14:27:38.000Z</published>
-    <updated>2023-03-05T06:21:24.390Z</updated>
+    <updated>2023-03-05T13:02:20.180Z</updated>
     
     
       
@@ -107,10 +282,10 @@
     
     
     
-    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="安装" scheme="https://codeqiao.github.io/categories/%E5%AE%89%E8%A3%85/"/>
     
-    <category term="安装" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E5%AE%89%E8%A3%85/"/>
     
+    <category term="安装" scheme="https://codeqiao.github.io/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+
+
+  <meta name="generator" content="Hexo 6.3.0">
+
+  
+
+  
+
+  
+    <meta name="author" content="Qiao">
+  
+
+  
+
+  
+
+  <title>七、多处理机 | Qiao&#39;s Blog</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="alternate" href="/atom.xml" title="Qiao's Blog" type="application/atom+xml">
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Qiao&#39;s Blog
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags/%E6%97%85%E8%A1%8C">旅行</a></li>
+        
+          <li class="navbar-list-item"><a href="/archives">归档</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">友链</a></li>
+        
+          <li class="navbar-list-item"><a href="/messages">留言板</a></li>
+        
+          <li class="navbar-list-item"><a href="/about/me">关于我</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">七、多处理机</h1>
+          <h2 class="title-sub-wrap">
+            <strong>Qiao</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2023-03-05T13:29:06.000Z" itemprop="datePublished">2023-03-05</time>
+          </h2>
+          
+          
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">📒 计算机体系结构</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">🏷️ 计算机体系结构</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="多处理机"><a href="#多处理机" class="headerlink" title="多处理机"></a>多处理机</h1><h2 id="共享存储器体系结构"><a href="#共享存储器体系结构" class="headerlink" title="共享存储器体系结构"></a>共享存储器体系结构</h2><h3 id="集中式共享存储器结构"><a href="#集中式共享存储器结构" class="headerlink" title="集中式共享存储器结构"></a>集中式共享存储器结构</h3><p><img src="/2023/03/05/%E4%B8%83%E3%80%81%E5%A4%9A%E5%A4%84%E7%90%86%E6%9C%BA/image-20230209160903702.png" alt="image-20230209160903702"></p>
+<h3 id="分布式共享存储器结果"><a href="#分布式共享存储器结果" class="headerlink" title="分布式共享存储器结果"></a>分布式共享存储器结果</h3><img src="image-20230209160940279.png" alt="image-20230209160940279"  />
+
+<h2 id="多处理机Cache一致性问题"><a href="#多处理机Cache一致性问题" class="headerlink" title="多处理机Cache一致性问题"></a>多处理机Cache一致性问题</h2><h3 id="不一致产生的原因"><a href="#不一致产生的原因" class="headerlink" title="不一致产生的原因"></a>不一致产生的原因</h3><h4 id="IO操作"><a href="#IO操作" class="headerlink" title="IO操作"></a>IO操作</h4><p>Cache中的内容可能由于IO子系统输入输出形成的存储器对应部分的内容不同</p>
+<h4 id="共享数据"><a href="#共享数据" class="headerlink" title="共享数据"></a>共享数据</h4><p>不同处理器的Cache都保存有对应存储器单元的内容</p>
+<h4 id="栗子"><a href="#栗子" class="headerlink" title="栗子"></a>栗子</h4><p><img src="/2023/03/05/%E4%B8%83%E3%80%81%E5%A4%9A%E5%A4%84%E7%90%86%E6%9C%BA/image-20230209161605020.png" alt="image-20230209161605020"></p>
+<h3 id="实现一致性的基本方案"><a href="#实现一致性的基本方案" class="headerlink" title="实现一致性的基本方案"></a>实现一致性的基本方案</h3><ul>
+<li>共享数据的迁移</li>
+<li>共享数据的复制</li>
+</ul>
+<h4 id="关键"><a href="#关键" class="headerlink" title="关键"></a>关键</h4><p>跟踪共享数据块的状态</p>
+<h4 id="共享数据状态跟踪技术"><a href="#共享数据状态跟踪技术" class="headerlink" title="共享数据状态跟踪技术"></a>共享数据状态跟踪技术</h4><h5 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h5><p>物理存储器中共享数据块的状态及相关信息均被保存在目录中</p>
+<p><img src="/2023/03/05/%E4%B8%83%E3%80%81%E5%A4%9A%E5%A4%84%E7%90%86%E6%9C%BA/image-20230209163828032.png" alt="image-20230209163828032"></p>
+<h6 id="基本特点"><a href="#基本特点" class="headerlink" title="基本特点"></a>基本特点</h6><ul>
+<li>在每个节点增加了目录存储器用于存放目录</li>
+<li>存储器的每一块在目录中对应有一项</li>
+<li>每一个目录项主要有状态和位向量两种成分。<ul>
+<li>状态描述该目录所对应存储块的当前情况</li>
+<li>位向量共有M位，其每一位对应一个处理器的局部Cache,用于指出该Cache中有无该存储块的拷贝</li>
+</ul>
+</li>
+</ul>
+<h6 id="Cache块的三种状态"><a href="#Cache块的三种状态" class="headerlink" title="Cache块的三种状态"></a>Cache块的三种状态</h6><ul>
+<li><code>共享</code><ul>
+<li>在一个或多个处理器上具有这个块的拷贝，且主存中的值是最新值（所有Cache均相同）</li>
+</ul>
+</li>
+<li><code>未缓冲</code><ul>
+<li>所有处理器的Cache都没有此块的拷贝</li>
+</ul>
+</li>
+<li><code>专有</code><ul>
+<li>仅有一个处理器上有此块的拷贝，且已对此块进行了写操作，而主存的拷贝仍是旧的。这个处理器称为此块的拥有者</li>
+</ul>
+</li>
+</ul>
+<h6 id="各个状态下所接收到的请求和相应的操作"><a href="#各个状态下所接收到的请求和相应的操作" class="headerlink" title="各个状态下所接收到的请求和相应的操作"></a>各个状态下所接收到的请求和相应的操作</h6><ol>
+<li>当一个块处于&#x3D;&#x3D;未缓冲&#x3D;&#x3D;状态时，对此块发出的请求及处理操作为：<ul>
+<li>读失效：<code>未缓冲</code> -&gt; <code>共享</code><ul>
+<li>将存储器数据送往请求方处理器，且本处理器成为此块的唯一共享节点，本块的转该转换为共享。</li>
+</ul>
+</li>
+<li>写失效：<code>未缓冲</code> -&gt; <code>专有</code><ul>
+<li>将存储器数据发往请求放处理器，此块成为专有。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>当一个块是&#x3D;&#x3D;共享&#x3D;&#x3D;状态时，存储器中的数据时期当前的最新值，对此块发出的请求及处理操作为：<ul>
+<li>读失效：<code>共享</code>-&gt; <code>将新的处理器加入共享集合</code><ul>
+<li>将存储器数据送往请求方处理器，并将其加入共享集合。</li>
+</ul>
+</li>
+<li>写失效：<code>共享</code>-&gt; <code>专有</code><ul>
+<li>将数据送往请求方处理器，对共享集合中所有的处理器发送写作废消息，且将共享集合置为仅含此处理器，本块的状态变为专有。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>当一个块是&#x3D;&#x3D;专有&#x3D;&#x3D;状态时，本块的最新值保存在共享集合指出的拥有者处理器中，从而有三种可能的目录请求：<ul>
+<li>读失效：<code>专有</code> -&gt;<code>共享</code><ul>
+<li>将“取数据”的消息发往拥有者处理器，使该块的状态转变为共享，并将数据送回目录节点写入存储器，进而把该数据返回请求放处理器，将请求方处理器加入共享集合。</li>
+</ul>
+</li>
+<li>写失效：<code>专有</code> -&gt; <code>专有</code><ul>
+<li>本块将拥有一个新的拥有者。</li>
+</ul>
+</li>
+<li>数据写回：<code>专有</code>-&gt; <code>未缓冲</code><ul>
+<li>拥有者处理器的Cache要替换此块时必须将其写回。从而使存储器中有最新拷贝（宿主节点实际上成为拥有者），此块成为未缓冲，共享集合为空。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="监听"><a href="#监听" class="headerlink" title="监听"></a>监听</h5><p>每个Cache除了包含物理存储器中块的数据拷贝之外，也保存着各个块的共享状态信息</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2023/03/05/%E5%85%AD%E3%80%81IO%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">六、IO与操作系统</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+    
+      <h2>Qiao</h2>
+    
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>11</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        5
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        5
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%8B%87%E5%A3%AB/">
+            勇士 (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">
+            计算机体系结构 (7)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%AE%89%E8%A3%85/">
+            安装 (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E5%AE%A5%E5%AE%A5/">
+            宥宥 (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/">
+            操作系统笔记 (1)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/%E5%8B%87%E5%A3%AB/" style="font-size: 10px;" class="tags-cloud-0">勇士</a> <a href="/tags/%E5%AE%89%E8%A3%85/" style="font-size: 10px;" class="tags-cloud-0">安装</a> <a href="/tags/%E5%AE%A5%E5%AE%A5/" style="font-size: 10px;" class="tags-cloud-0">宥宥</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/" style="font-size: 10px;" class="tags-cloud-0">操作系统笔记</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 20px;" class="tags-cloud-10">计算机体系结构</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/miiiku/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+          <a href="https://twitter.com/guanquanhong" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-twitter" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M962.285714 233.142857q-38.285714 56-92.571429 95.428571 0.571429 8 0.571429 24 0 74.285714-21.714286 148.285714t-66 142-105.428571 120.285714-147.428571 83.428571-184.571429 31.142857q-154.857143 0-283.428571-82.857143 20 2.285714 44.571429 2.285714 128.571429 0 229.142857-78.857143-60-1.142857-107.428571-36.857143t-65.142857-91.142857q18.857143 2.857143 34.857143 2.857143 24.571429 0 48.571429-6.285714-64-13.142857-106-63.714286t-42-117.428571l0-2.285714q38.857143 21.714286 83.428571 23.428571-37.714286-25.142857-60-65.714286t-22.285714-88q0-50.285714 25.142857-93.142857 69.142857 85.142857 168.285714 136.285714t212.285714 56.857143q-4.571429-21.714286-4.571429-42.285714 0-76.571429 54-130.571429t130.571429-54q80 0 134.857143 58.285714 62.285714-12 117.142857-44.571429-21.142857 65.714286-81.142857 101.714286 53.142857-5.714286 106.285714-28.571429z"></path>
+</svg>
+          </a>
+        
+      
+    </div>
+     
+    <p>&copy; 2023 <a href="/" target="_blank">Qiao</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>
