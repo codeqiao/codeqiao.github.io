@@ -264,8 +264,8 @@
 <li>分支指令如果使用上一条指令的结果作为分支条件，将要延迟一个节拍。</li>
 </ul>
 <p><code>流水线冒险：对于具体的流水线来说，相关导致指令流中的下一条指令不能在指定的时钟周期执行</code></p>
-<p><img src="/image-20230305232949546.png" alt="image-20230305232949546"></p>
-<p><img src="/image-20230305232918502.png" alt="image-20230305232918502"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230305232949546.png" alt="image-20230305232949546"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230305232918502.png" alt="image-20230305232918502"></p>
 <blockquote>
 <p>指令级并行的定义</p>
 </blockquote>
@@ -279,9 +279,9 @@
 <li>静态调度：编译器调度</li>
 <li>动态调度：专门硬件调度</li>
 </ul>
-<p><img src="/image-20230305234756779.png" alt="image-20230305234756779"></p>
-<p><img src="/image-20230305235632691.png" alt="image-20230305235632691"></p>
-<p><img src="/image-20230306000005951.png" alt="image-20230306000005951"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230305234756779.png" alt="image-20230305234756779"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230305235632691.png" alt="image-20230305235632691"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306000005951.png" alt="image-20230306000005951"></p>
 <blockquote>
 <p>Tomasulo算法</p>
 </blockquote>
@@ -291,9 +291,9 @@
 <li><p>动态调度会导致乱序执行，这样就会增加异常处理的难度，因为现场可能和按照顺序执行的现场不一样。</p>
 </li>
 <li><p>该算法不检查WAR和WAW相关。通过算法的本身会解决他们。</p>
-<p><img src="/image-20230306104107420.png" alt="image-20230306104107420"></p>
-<p><img src="/image-20230306104327218.png" alt="image-20230306104327218"></p>
-<p><img src="/image-20230306105243292.png" alt="image-20230306105243292"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306104107420.png" alt="image-20230306104107420"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306104327218.png" alt="image-20230306104327218"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306105243292.png" alt="image-20230306105243292"></p>
 <ul>
 <li>保留站和缓冲为虚拟功能部件</li>
 <li><code>指令中的寄存器被数值或者指向保留站的指针代替，这一过程被称为：寄存器重命名。</code></li>
@@ -319,11 +319,11 @@
 <li><p>分支预测的两个步骤：1、预测。2、找目标地址</p>
 </li>
 </ul>
-<p><img src="/image-20230306115146907.png" alt="image-20230306115146907"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306115146907.png" alt="image-20230306115146907"></p>
 <blockquote>
 <p>BHT 、BPB： 分支历史表、分支预测缓冲器 </p>
 </blockquote>
-<p><img src="/image-20230306115419161.png" alt="image-20230306115419161"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306115419161.png" alt="image-20230306115419161"></p>
 <ul>
 <li>BHT：不计算分支目标</li>
 <li>BHT只有当预测分支是否成功所需要的时间大于确定分支目标地址所需要的时间才是有效的。</li>
@@ -331,9 +331,9 @@
 <blockquote>
 <p>BTB: 分支目标缓冲器</p>
 </blockquote>
-<p><img src="/image-20230306141856022.png" alt="image-20230306141856022"></p>
-<p><img src="/image-20230306142045859.png" alt="image-20230306142045859"></p>
-<p><img src="/image-20230306142331312.png" alt="image-20230306142331312"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306141856022.png" alt="image-20230306141856022"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306142045859.png" alt="image-20230306142045859"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306142331312.png" alt="image-20230306142331312"></p>
 <blockquote>
 <p>基于分支预测的前瞻执行</p>
 </blockquote>
@@ -347,8 +347,8 @@
 <li><p><code>用动态调度对基本块的各种组合进行跨快调度</code></p>
 <ul>
 <li><p>前瞻的关键思想：允许指令乱序执行，但是必须顺序确认</p>
-<p><img src="/image-20230306143149542.png" alt="image-20230306143149542"></p>
-<p><img src="/image-20230306143241544.png" alt="image-20230306143241544"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306143149542.png" alt="image-20230306143149542"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306143241544.png" alt="image-20230306143241544"></p>
 <p>前瞻执行的指令执行步骤</p>
 <ul>
 <li>流出</li>
@@ -369,7 +369,7 @@
 </blockquote>
 <ul>
 <li>DRAM：电荷会丢失，需要周期性刷新</li>
-<li>SRAM<img src="/image-20230306145034696.png" alt="image-20230306145034696"></li>
+<li>SRAM<img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306145034696.png" alt="image-20230306145034696"></li>
 </ul>
 <blockquote>
 <p>为了实现又大又快又便宜，我们就需要使用多级存储器，也就是存储层次架构。</p>
@@ -379,11 +379,11 @@
 <li>空间局部性</li>
 <li>时间局部性</li>
 </ul>
-<p><img src="/image-20230306150211802.png" alt="image-20230306150211802"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306150211802.png" alt="image-20230306150211802"></p>
 <ul>
 <li>访存延迟的时间 &#x3D; 命中的时间 + 缺失率  x 下一层访存的延迟</li>
 </ul>
-<p><img src="/image-20230306150449865.png" alt="image-20230306150449865"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306150449865.png" alt="image-20230306150449865"></p>
 <h2 id="8、缓存的架构，配置，读写，及常用的优化技术；常用的缓存管理策略的原理的方法"><a href="#8、缓存的架构，配置，读写，及常用的优化技术；常用的缓存管理策略的原理的方法" class="headerlink" title="8、缓存的架构，配置，读写，及常用的优化技术；常用的缓存管理策略的原理的方法"></a>8、缓存的架构，配置，读写，及常用的优化技术；常用的缓存管理策略的原理的方法</h2><blockquote>
 <p>缓存的常见架构</p>
 </blockquote>
@@ -446,12 +446,12 @@
 <blockquote>
 <p>缓存的性能公式：</p>
 </blockquote>
-<p><img src="/image-20230306192309796.png" alt="image-20230306192309796"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306192309796.png" alt="image-20230306192309796"></p>
 <ul>
 <li>由上面的公式可以得到优化缓存的性能可以减少失效率、减少失效开销、减少命中开销。</li>
 </ul>
-<p><img src="/image-20230306201137426.png" alt="image-20230306201137426"></p>
-<p><img src="/image-20230306201358979.png" alt="image-20230306201358979"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306201137426.png" alt="image-20230306201137426"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306201358979.png" alt="image-20230306201358979"></p>
 <blockquote>
 <p>减少三种失效的方法：</p>
 </blockquote>
@@ -504,22 +504,22 @@
 <p>主存的组织技术</p>
 </blockquote>
 <ul>
-<li><p>增加存储器的宽度- 会导致Cache与CPU之间要加一个多路选择器。<img src="/image-20230306213745934.png" alt="image-20230306213745934"></p>
+<li><p>增加存储器的宽度- 会导致Cache与CPU之间要加一个多路选择器。<img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306213745934.png" alt="image-20230306213745934"></p>
 </li>
-<li><p>采用简单的多体交叉存储器 - 高位交叉编址和低位交叉编址，地位交叉编址非常利于并行处理。<img src="/image-20230306214604632.png" alt="image-20230306214604632"></p>
+<li><p>采用简单的多体交叉存储器 - 高位交叉编址和低位交叉编址，地位交叉编址非常利于并行处理。<img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306214604632.png" alt="image-20230306214604632"></p>
 </li>
-<li><p>独立存储体<img src="/image-20230306214740272.png" alt="image-20230306214740272"></p>
+<li><p>独立存储体<img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306214740272.png" alt="image-20230306214740272"></p>
 </li>
 </ul>
 <blockquote>
 <p>虚拟存储器 ： 主存-辅存层次</p>
 </blockquote>
-<p><img src="/image-20230306215950277.png" alt="image-20230306215950277"></p>
-<p><img src="/image-20230306220402206.png" alt="image-20230306220402206"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306215950277.png" alt="image-20230306215950277"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306220402206.png" alt="image-20230306220402206"></p>
 <ul>
 <li>TLB ：快表</li>
 </ul>
-<p><img src="/image-20230306220336879.png" alt="image-20230306220336879"></p>
+<p><img src="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/image-20230306220336879.png" alt="image-20230306220336879"></p>
 <blockquote>
 <p>虚拟存储技术的核心原理</p>
 </blockquote>
@@ -546,14 +546,28 @@
       
         <nav class="article-nav">
           
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">(no title)</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2023/03/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">(no title)</h2>
+        <a href="/2023/03/05/%E5%8B%87%E5%A3%AB/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">勇士</h2>
         </a>
       
       <div class="card-text--row">Older</div>
