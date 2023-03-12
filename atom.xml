@@ -6,7 +6,7 @@
   <link href="https://codeqiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://codeqiao.github.io/"/>
-  <updated>2023-03-10T14:53:13.167Z</updated>
+  <updated>2023-03-12T15:04:15.437Z</updated>
   <id>https://codeqiao.github.io/</id>
   
   <author>
@@ -17,18 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>words</title>
+    <link href="https://codeqiao.github.io/2023/03/12/words/"/>
+    <id>https://codeqiao.github.io/2023/03/12/words/</id>
+    <published>2023-03-12T13:43:05.000Z</published>
+    <updated>2023-03-12T15:04:15.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;六级高频词汇&lt;/h1&gt;
+&lt;h2 id=&quot;第一天&quot;&gt;第一天&lt;/h2&gt;
+&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=764747303&amp;bvid=BV1gr4y1D7FG&amp;cid=457311557&amp;page=1&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>渗透测试学习笔记</title>
     <link href="https://codeqiao.github.io/2023/03/09/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://codeqiao.github.io/2023/03/09/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2023-03-09T12:14:29.000Z</published>
-    <updated>2023-03-10T14:53:13.167Z</updated>
+    <updated>2023-03-11T03:12:27.452Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;a class=&quot;link&quot;   href=&quot;https://www.yuque.com/weiker/xiaodi&quot; &gt;小迪安全学习笔记&lt;i class=&quot;fas</summary>
+    <summary type="html">&lt;p&gt;&lt;a class=&quot;link&quot;   href=&quot;https://www.yuque.com/weiker/xiaodi&quot; &gt;小迪安全学习笔记&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
         
       
     
