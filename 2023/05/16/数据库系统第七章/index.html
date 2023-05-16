@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Qiao">
+    
+    <title>
+        
+            数据库系统第七章 |
+        
+        Qiao&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/font/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/font/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/font/css/brands.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"codeqiao.github.io","root":"/","language":"cn","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":false},"style":{"primary_color":"#0066cc","logo":"https://cdn.staticaly.com/gh/XPoet/image-hosting@master/hexo-theme-keep/logo.7ihwqpf2atg0.svg","favicon":"/images/logo.svg","avatar":"/images/avatar.svg","font_size":null,"font_family":"STKaiti","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"/images/bg.svg","description":"黄色的森林分出两条路 || 我选择人迹更少的那一条，从此决定我一生的道路。","font_color":null,"hitokoto":true},"scroll":{"progress_bar":false,"percent":true}},"local_search":{"enable":false,"preload":false},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.8"},"waline":{"server_url":null,"reaction":false,"version":2}},"post":{"author_label":{"enable":false,"auto":true,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"enable":false,"wordcount":true,"min2read":true},"img_align":"left","copyright_info":false},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original article title","author":"Original article author","link":"Original article link"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Qiao's Blog" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.staticaly.com/gh/XPoet/image-hosting@master/hexo-theme-keep/logo.7ihwqpf2atg0.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               Qiao&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags/%E6%97%85%E8%A1%8C"
+                            >
+                                旅行
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/HTML/index.html"
+                            >
+                                关于我
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/test"
+                            >
+                                测试
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags/%E6%97%85%E8%A1%8C">旅行</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/HTML/index.html">关于我</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/test">测试</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">数据库系统第七章</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Qiao</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-05-16 13:27:20</span>
+        <span class="mobile">2023-05-16 13:27</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-05-16 11:28:22</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1>第七章 数据库设计</h1>
+<h2 id="7-1-数据库设计概述">7.1 数据库设计概述</h2>
+<blockquote>
+<p>什么是数据库设计？</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>数据库设计是指对于一个给定的应用环境，设计一个优良的数据库逻辑模式和物理结构，并据此建立数据库及其应用系统，使之能够有效地存储和管理数据，满足各种用户的应用需求，包括信息管理要求和数据处理要求。</p>
+</li>
+</ul>
+<blockquote>
+<p>数据库设计的特点：</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>数据库建设的基本规律-三分技术，七分管理，十二分基础数据</p>
+</li>
+<li class="lvl-2">
+<p>结构设计与行为设计相结合</p>
+</li>
+</ul>
+<blockquote>
+<p>数据库设计的基本步骤：</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>需求分析</p>
+</li>
+<li class="lvl-2">
+<p>概念结构设计（ER图）</p>
+</li>
+<li class="lvl-2">
+<p>逻辑结构设计（数据模型（关系模型），形成逻辑模式（在此基础上可以建立视图，形成外模式））</p>
+</li>
+<li class="lvl-2">
+<p>物理结构设计（物理存储，建立索引，形成内模式）</p>
+</li>
+<li class="lvl-2">
+<p>数据库实施</p>
+</li>
+<li class="lvl-2">
+<p>数据库运行和维护</p>
+</li>
+</ul>
+<p><img src="D:%5CUsers%5CLICHAO%5CDesktop%5C%E6%95%B0%E6%8D%AE%E5%BA%93%5C%E8%AF%BE%E4%BB%B6%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0%5Cimage-20230515202210260.png" alt="image-20230515202210260"></p>
+<h2 id="7-2-需求分析">7.2 需求分析</h2>
+<blockquote>
+<p>需求分析的三个步骤</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>明确用户的各种需求</p>
+</li>
+<li class="lvl-2">
+<p>确定新系统的功能</p>
+</li>
+<li class="lvl-2">
+<p>调查、收集与分析用户在数据管理中的信息要求、处理要求、安全性与完整性要求</p>
+</li>
+</ul>
+<blockquote>
+<p>数据字典</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>数据项</p>
+</li>
+<li class="lvl-2">
+<p>数据结构</p>
+</li>
+<li class="lvl-2">
+<p>数据流</p>
+</li>
+<li class="lvl-2">
+<p>数据存储</p>
+</li>
+<li class="lvl-2">
+<p>处理过程</p>
+</li>
+</ul>
+<h2 id="7-3-概念结构设计">7.3 概念结构设计</h2>
+<p>画出ER图</p>
+<p>概念模型不依赖于计算机和具体的DBMS，从而更加的稳定</p>
+<blockquote>
+<p>概念结构设计的特点</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>有丰富的语义表达能力</p>
+</li>
+<li class="lvl-2">
+<p>易于交流和理解</p>
+</li>
+<li class="lvl-2">
+<p>易于更改</p>
+</li>
+<li class="lvl-2">
+<p>易于向各种数据模型转换</p>
+</li>
+</ul>
+<blockquote>
+<p>概念结构设计的策略</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>自底向上（最常用）</p>
+</li>
+<li class="lvl-2">
+<p>自顶向下</p>
+</li>
+<li class="lvl-2">
+<p>逐步扩张</p>
+</li>
+<li class="lvl-2">
+<p>混合策略</p>
+</li>
+</ul>
+<blockquote>
+<p>全局ER模型设计的冲突</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>属性冲突</p>
+</li>
+<li class="lvl-2">
+<p>命名冲突</p>
+</li>
+<li class="lvl-2">
+<p>结构冲突</p>
+</li>
+</ul>
+<h2 id="7-4-逻辑结构设计">7.4 逻辑结构设计</h2>
+<p>是把概念结构设计阶段设计好的基本E-R图转换为具体的数据库管理系统支持的数据模型，也就是导出特定的DBMS可以处理数据库的逻辑结构</p>
+<blockquote>
+<p>ER模型向关系模型的一般转换规则</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>一个实体转换为一个关系模式</p>
+</li>
+<li class="lvl-2">
+<p>一个1：1联系可以转换为一个独立的关系模式，也可以与任意一端所对应的关系模式合并</p>
+</li>
+<li class="lvl-2">
+<p>一个1：n联系可以转换为一个独立的关系模式，也可以与任意n端所对应的关系模式合并</p>
+</li>
+<li class="lvl-2">
+<p>一个m：n联系转换为一个独立的关系模式</p>
+</li>
+<li class="lvl-2">
+<p>三个或三个以上实体间的一个多元联系转换为一个关系模式</p>
+</li>
+<li class="lvl-2">
+<p>具有相同码的关系模式可以合并。</p>
+</li>
+</ul>
+<p>注：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>在1：1联系中一般不将联系单独作为一张表,因为这样转换出来的表太多,查询时涉及的表个数越多,查询效率就越低</p>
+</li>
+<li class="lvl-2">
+<p>在1：n联系中一般不将联系单独作为一张表</p>
+</li>
+</ul>
+<h2 id="7-5-物理结构设计">7.5 物理结构设计</h2>
+<p>对已确定的逻辑数据结构，利用DBMS提供的方法、技术，以较优的存储结构、数据存取路径、合理的数据存储位置以及存储分配，设计出一个高效的、可实现的物理数据库结构。</p>
+<blockquote>
+<p>物理结构设计的主要内容</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>确定存取方法(b+树索引方法，聚簇方法，HASH方法)</p>
+</li>
+<li class="lvl-2">
+<p>确定存储结构（顺序存储，散列存储，聚簇存储）</p>
+</li>
+</ul>
+<blockquote>
+<p>物理结构设计的评价</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>查询和响应时间</p>
+</li>
+<li class="lvl-2">
+<p>更新事物的开销</p>
+</li>
+<li class="lvl-2">
+<p>生成报告的开销</p>
+</li>
+<li class="lvl-2">
+<p>主存储空间的开销</p>
+</li>
+<li class="lvl-2">
+<p>辅助存储空间的开销</p>
+</li>
+</ul>
+<h2 id="7-6-数据库和实施和维护">7.6 数据库和实施和维护</h2>
+<p><img src="D:%5CUsers%5CLICHAO%5CDesktop%5C%E6%95%B0%E6%8D%AE%E5%BA%93%5C%E8%AF%BE%E4%BB%B6%5C%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0%5Cimage-20230515212339601.png" alt="image-20230515212339601"></p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">#数据库</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/03/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">数据结构</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">第七章 数据库设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%BF%B0"><span class="nav-text">7.1 数据库设计概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-text">7.2 需求分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-%E6%A6%82%E5%BF%B5%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">7.3 概念结构设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-4-%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">7.4 逻辑结构设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-5-%E7%89%A9%E7%90%86%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">7.5 物理结构设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-6-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E5%AE%9E%E6%96%BD%E5%92%8C%E7%BB%B4%E6%8A%A4"><span class="nav-text">7.6 数据库和实施和维护</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2023</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">Qiao</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            <a target="_blank" href="https://hexo.io">Hexo</a> 框架&nbsp;|&nbsp;主題&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/code-block.js"></script>
+
+
+
+
+<div class="post-scripts">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/post-helper.js"></script>
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/libs/anime.min.js"></script>
+        
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/toc.js"></script>
+        
+    
+</div>
+
+
+
+</body>
+</html>
