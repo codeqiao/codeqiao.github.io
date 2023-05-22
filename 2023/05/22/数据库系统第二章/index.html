@@ -9,8 +9,6 @@
     
     <title>
         
-            标签: 数据库 |
-        
         Qiao&#39;s Blog
     </title>
     
@@ -189,42 +187,259 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="tag-container">
-        <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;数据库
-        </div>
-        <div class="tag-post-list">
-            
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2023</span>
-                <span class="archive-year-post-count">[1]</span>
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation"></span>
             </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/16/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/"
-                        >数据库系统第七章</a>
-                        <span class="article-date">05-16</span>
-                    </li>
-                
-            </ul>
-        </section>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Qiao</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-05-22 15:41:27</span>
+        <span class="mobile">2023-05-22 15:41</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-05-22 15:36:12</span>
+    </span>
+    
+    
+    
+
+    
+    
+    
     
 </div>
 
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1>第二章 关系数据库</h1>
+<p>[TOC]</p>
+<h2 id="2-1-关系数据结构及形式化定义">2.1 关系数据结构及形式化定义</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>逻辑结构：二维表</p>
+</li>
+<li class="lvl-2">
+<p>域</p>
+</li>
+<li class="lvl-2">
+<p>笛卡尔积</p>
+</li>
+<li class="lvl-2">
+<p>基数：一个域不同取值的个数</p>
+</li>
+</ul>
+<blockquote>
+<p>码</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>候选码：关系中的某一属性组的值能唯一标识一个元组，则该属性组为候选码</p>
+</li>
+<li class="lvl-2">
+<p>主码：一个关系有多个候选码，则选择其中一个为主码</p>
+</li>
+<li class="lvl-2">
+<p>全码：所有属性组共同组成全码</p>
+</li>
+<li class="lvl-2">
+<p>外码：</p>
+</li>
+<li class="lvl-2">
+<p>主属性</p>
+</li>
+<li class="lvl-2">
+<p>非主属性</p>
+</li>
+</ul>
+<blockquote>
+<p>关系的三种类型</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本关系</p>
+</li>
+<li class="lvl-2">
+<p>查询表</p>
+</li>
+<li class="lvl-2">
+<p>视图表</p>
+</li>
+</ul>
+<blockquote>
+<p>关系模型的形式化表示</p>
+</blockquote>
+<p><img src="image-20230521193659649.png" alt="image-20230521193659649"></p>
+<h2 id="2-2-关系操作">2.2 关系操作</h2>
+<p><img src="image-20230521194644193.png" alt="image-20230521194644193"></p>
+<blockquote>
+<p>非过程化语言：用户只需要告诉做什么，不需要告诉怎么做</p>
+</blockquote>
+<h2 id="2-3-关系的完整性">2.3 关系的完整性</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>实体完整性</p>
+</li>
+<li class="lvl-2">
+<p>参照完整性</p>
+</li>
+<li class="lvl-2">
+<p>用户定义完整性</p>
+</li>
+<li class="lvl-2">
+<p>实体完整性和参照完整性是关系模型必须满足的完整性约束条件，被称作是关系的两个不变性，应该由关系系统自动支持</p>
+</li>
+</ul>
+<blockquote>
+<p>实体完整性</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>若属性A是基本关系R的主属性，则属性A不能取空值</p>
+</li>
+</ul>
+<blockquote>
+<p>外键</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>外键可以为空</p>
+</li>
+</ul>
+<blockquote>
+<p>参照完整性</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>基本关系R称为参照关系（Referencing Relation）基本关系S称为被参照关系（ReferencedRelation）或目标（TargetRelation）</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 关系R和S不一定是不同的关系</span><br><span class="line">- 目标关系S的主码Ks 和参照关系的外码F必须定义在同一个（或一组）域上</span><br><span class="line">- 外码并不一定要与相应的主码同名</span><br><span class="line">- 当外码与相应的主码属于不同关系时，往往取相同的名字，以便于识别</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>用户自定义完整性</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>针对某一具体关系数据库的约束条件，用户定义的反映某一具体应用所涉及的数据必须满足的语义要求； 一经定义，DBMS会自动检查，从而不必在应用程序中作检查。</p>
+</li>
+</ul>
+<h2 id="2-4-关系代数">2.4 关系代数</h2>
+<p><img src="image-20230521195907223.png" alt="image-20230521195907223"></p>
+<blockquote>
+<p>连接</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>等值连接</p>
+</li>
+<li class="lvl-2">
+<p>自然连接：特殊的等值连接</p>
+</li>
+<li class="lvl-2">
+<p>其他连接</p>
+</li>
+</ul>
+<blockquote>
+<p>外连接</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>左外连接（其他属性补位NULL）</p>
+</li>
+<li class="lvl-2">
+<p>右外连接（其他属性补位NULL）</p>
+</li>
+</ul>
+<blockquote>
+<p>象集</p>
+</blockquote>
+<p><img src="image-20230521200841440.png" alt="image-20230521200841440"></p>
+<blockquote>
+<p>除运算</p>
+</blockquote>
+<h2 id="2-5-关系演算">*2.5 关系演算</h2>
+
+            </div>
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B9%9D%E7%AB%A0/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
         </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">第二章 关系数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="nav-text">2.1 关系数据结构及形式化定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C"><span class="nav-text">2.2 关系操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-text">2.3 关系的完整性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0"><span class="nav-text">2.4 关系代数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97"><span class="nav-text">*2.5 关系演算</span></a></li></ol></li></ol>
     </div>
-
-    <div class="tag-paginator">
-        <div class="paginator">
-    
-
-    
 </div>
 
+            </div>
+        
     </div>
 </div>
 
@@ -261,6 +476,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -327,6 +559,14 @@
 
 
 <div class="post-scripts">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/post-helper.js"></script>
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/libs/anime.min.js"></script>
+        
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/toc.js"></script>
+        
     
 </div>
 
