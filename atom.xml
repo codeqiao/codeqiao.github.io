@@ -71,6 +71,33 @@
   
   <entry>
     <title></title>
+    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/"/>
+    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/</id>
+    <published>2023-05-22T07:41:27.837Z</published>
+    <updated>2023-05-22T07:37:46.674Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;第十一章 并发控制&lt;/h1&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-2&quot;&gt;
+&lt;p&gt;事务可以一个一个的串行执行，即每个时刻只有一个事务运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.837Z</published>
@@ -97,33 +124,6 @@
     <summary type="html">&lt;h1&gt;数据库系统第十章&lt;/h1&gt;
 &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2 id=&quot;10-1-事物的基本概念&quot;&gt;10.1</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/"/>
-    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/</id>
-    <published>2023-05-22T07:41:27.837Z</published>
-    <updated>2023-05-22T07:37:46.674Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;第十一章 并发控制&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;ul class=&quot;lvl-0&quot;&gt;
-&lt;li class=&quot;lvl-2&quot;&gt;
-&lt;p&gt;事务可以一个一个的串行执行，即每个时刻只有一个事务运行&lt;/p&gt;
-&lt;/li&gt;
-&lt;li</summary>
         
       
     
