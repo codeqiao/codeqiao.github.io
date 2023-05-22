@@ -6,7 +6,7 @@
   <link href="https://codeqiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://codeqiao.github.io/"/>
-  <updated>2023-05-22T07:57:58.993Z</updated>
+  <updated>2023-05-22T08:01:59.968Z</updated>
   <id>https://codeqiao.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库系统概述第七章</title>
+    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/"/>
+    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/</id>
+    <published>2023-05-22T14:22:43.000Z</published>
+    <updated>2023-05-22T08:01:59.968Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;第七章 数据库设计&lt;/h1&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;7-1-数据库设计概述&quot;&gt;7.1 数据库设计概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;什么是数据库设计？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>数据库系统概述第一章</title>
@@ -320,33 +354,6 @@
     
     
     <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/"/>
-    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/</id>
-    <published>2023-05-22T07:41:27.790Z</published>
-    <updated>2023-05-22T07:48:53.528Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;title: 数据库系统概述第七章&lt;br&gt;
-tags:&lt;/p&gt;
-&lt;ul class=&quot;lvl-0&quot;&gt;
-&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
-&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
-categories:&lt;/li&gt;
-&lt;li</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
