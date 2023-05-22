@@ -219,7 +219,7 @@
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-05-22 15:57:58</span>
+        <span class="pc">2023-05-22 19:59:24</span>
     </span>
     
     
@@ -414,10 +414,10 @@
 </blockquote>
 <ul class="lvl-0">
 <li class="lvl-2">
-<p>逻辑模型</p>
+<p>概念模型</p>
 </li>
 <li class="lvl-2">
-<p>物理模型</p>
+<p>逻辑</p>
 </li>
 </ul>
 <blockquote>
@@ -528,6 +528,37 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">应用程序是依据外模式编写的，应用程序不必修改，保证了数据与程序的逻辑独立性，简称数据的逻辑独立性</span><br><span class="line"></span><br><span class="line">模式不变，则应用程序不变，保证了数据与程序的物理独立性，简称数据的物理独立性</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="1-4-数据库系统组成">1.4 数据库系统组成</h2>
 <p><img src="image-20230521161610829.png" alt="image-20230521161610829"></p>
+<blockquote>
+<p>什么叫数据与程序的物理独立性？什么叫数据与程序的逻辑独立性？为什么数据库系统具有数据与程序的独立性</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>物理独立性：当数据库的存储结构发生变化时，由数据库管理员对模式/内模式映像做出改变，可以使模式保持不变，从而应用程序不必改变</p>
+</li>
+<li class="lvl-2">
+<p>逻辑独立性：当数据库的逻辑结构发生变化时，由数据库管理员对外模式/模式映像做出改变，可以使外模式保持不变，从而应用程序不必改变。</p>
+</li>
+<li class="lvl-2">
+<p>DBMS在三级模式之间提供的两级映像保证了数据库系统中的数据能够具有较高的物理独立性和逻辑独立性。</p>
+</li>
+</ul>
+<blockquote>
+<p>数据库系统的特点：</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>数据结构化</p>
+</li>
+<li class="lvl-2">
+<p>数据的共享性高，冗余度低，可扩展性好</p>
+</li>
+<li class="lvl-2">
+<p>数据的独立性高</p>
+</li>
+<li class="lvl-2">
+<p>数据由DBMS统一管理和控制</p>
+</li>
+</ul>
 
             </div>
 

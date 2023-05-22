@@ -219,7 +219,7 @@
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-05-22 15:57:21</span>
+        <span class="pc">2023-05-22 22:27:43</span>
     </span>
     
     
@@ -457,6 +457,35 @@
 </blockquote>
 <p><img src="image-20230521150709380.png" alt="image-20230521150709380"></p>
 <h2 id="11-8-其他的并发控制机制">*11.8 其他的并发控制机制</h2>
+<blockquote>
+<p>在数据库中为什么要并发控制？并发控制技术能保证事务的哪些特性</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>为什么：数据库是共享资源，通常有多个事务同时在运行，当多个事务并发的存取数据库时就会产生同时读或修改同一数据的情况，若不加控制就会破坏数据库的一致性。</p>
+</li>
+<li class="lvl-2">
+<p>并发控制能保证事务的一致性和隔离性</p>
+</li>
+</ul>
+<blockquote>
+<p>并发操作可能会产生哪几类数据不一致？用什么方法能避免各种不一致情况？</p>
+</blockquote>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>丢失数据</p>
+</li>
+<li class="lvl-2">
+<p>不可重复度</p>
+</li>
+<li class="lvl-2">
+<p>读脏数据</p>
+</li>
+</ul>
+<blockquote>
+<p>可串行化的调度是正确的调度</p>
+<p>可串行化调度的定义：多个事务的并发执行是正确的当且仅当其结果与按某一次序串行执行他们的结果相同，称这种调度为可串行化的调度</p>
+</blockquote>
 
             </div>
 
