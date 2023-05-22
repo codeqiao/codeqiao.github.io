@@ -6,7 +6,7 @@
   <link href="https://codeqiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://codeqiao.github.io/"/>
-  <updated>2023-05-22T07:38:16.142Z</updated>
+  <updated>2023-05-22T07:48:09.409Z</updated>
   <id>https://codeqiao.github.io/</id>
   
   <author>
@@ -21,20 +21,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%9B%9B%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%9B%9B%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.853Z</published>
-    <updated>2023-05-22T07:38:16.142Z</updated>
+    <updated>2023-05-22T07:48:09.409Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第四章 数据库安全性&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;4-1-数据库安全性概述&quot;&gt;4.1 数据库安全性概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;数据库不安全的因素&lt;/p&gt;
-&lt;/blockquote&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第四章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
@@ -49,18 +48,20 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AB%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AB%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.837Z</published>
-    <updated>2023-05-22T07:35:08.806Z</updated>
+    <updated>2023-05-22T07:49:22.491Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第八章 数据库编程&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;SQL编程技术可以有效克服SQL语句实现复杂应用方面的不足，提高应用系统和数据库管理之间的互操作性。&lt;/p&gt;
-&lt;h2 id=&quot;8-1-嵌入式SQL&quot;&gt;8.1 嵌入式SQL&lt;/h2&gt;
-&lt;h3</summary>
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第八章&lt;br&gt;
+tags:&lt;/p&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
+&lt;li</summary>
         
       
     
@@ -74,19 +75,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.837Z</published>
-    <updated>2023-05-22T07:37:46.674Z</updated>
+    <updated>2023-05-22T07:48:32.834Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第十一章 并发控制&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第十一章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
-&lt;li class=&quot;lvl-2&quot;&gt;
-&lt;p&gt;事务可以一个一个的串行执行，即每个时刻只有一个事务运行&lt;/p&gt;
-&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
@@ -101,8 +102,22 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.837Z</published>
-    <updated>2023-05-21T14:26:20.030Z</updated>
+    <updated>2023-05-22T07:49:29.966Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第六章&lt;br&gt;
+tags:&lt;/p&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
+&lt;li</summary>
+        
+      
     
     
     
@@ -114,16 +129,20 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.837Z</published>
-    <updated>2023-05-22T07:38:02.923Z</updated>
+    <updated>2023-05-22T07:48:22.200Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;数据库系统第十章&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;10-1-事物的基本概念&quot;&gt;10.1</summary>
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第十章&lt;br&gt;
+tags:&lt;/p&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
+&lt;li</summary>
         
       
     
@@ -137,20 +156,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%BA%94%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%BA%94%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.820Z</published>
-    <updated>2023-05-22T07:39:03.081Z</updated>
+    <updated>2023-05-22T07:47:59.615Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第五章 数据库完整性&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;数据库的完整性指：数据的正确性和相容性&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;数据库管理系统必须实现如下功能&lt;/p&gt;
-&lt;/blockquote&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第五章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
@@ -165,16 +183,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B9%9D%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B9%9D%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.805Z</published>
-    <updated>2023-05-22T07:36:41.117Z</updated>
+    <updated>2023-05-22T07:49:02.998Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第九章 关系查询处理与查询优化&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第九章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
@@ -189,17 +210,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%BA%8C%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.805Z</published>
-    <updated>2023-05-22T07:36:12.836Z</updated>
+    <updated>2023-05-22T07:49:11.407Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第二章 关系数据库&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;2-1-关系数据结构及形式化定义&quot;&gt;2.1 关系数据结构及形式化定义&lt;/h2&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第二章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
@@ -214,19 +237,20 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.802Z</published>
-    <updated>2023-05-22T07:37:32.451Z</updated>
+    <updated>2023-05-22T07:48:43.570Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第三章 关系数据库标准语言SQL&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;3-1-SQL概述&quot;&gt;3.1  SQL概述&lt;/h2&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第三章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
-&lt;li class=&quot;lvl-2&quot;&gt;
-&lt;p&gt;SQL</summary>
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
+&lt;li</summary>
         
       
     
@@ -240,20 +264,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.790Z</published>
-    <updated>2023-05-22T07:37:15.204Z</updated>
+    <updated>2023-05-22T07:48:53.528Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第七章 数据库设计&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;7-1-数据库设计概述&quot;&gt;7.1 数据库设计概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;什么是数据库设计？&lt;/p&gt;
-&lt;/blockquote&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第七章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
@@ -268,20 +291,19 @@
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
     <published>2023-05-22T07:41:27.784Z</published>
-    <updated>2023-05-22T07:39:12.442Z</updated>
+    <updated>2023-05-22T07:47:46.045Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第一章 绪论&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;1-1-数据库概述&quot;&gt;1.1 数据库概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;四个基本概念&lt;/p&gt;
-&lt;/blockquote&gt;
+    <summary type="html">&lt;p&gt;title: 数据库系统概述第一章&lt;br&gt;
+tags:&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘笔记’&lt;/li&gt;
+&lt;li class=&quot;lvl-4&quot;&gt;‘’&lt;br&gt;
+categories:&lt;/li&gt;
 &lt;li</summary>
         
       
