@@ -6,7 +6,7 @@
   <link href="https://codeqiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://codeqiao.github.io/"/>
-  <updated>2023-05-22T12:54:46.016Z</updated>
+  <updated>2023-05-26T04:24:27.410Z</updated>
   <id>https://codeqiao.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>makefile</title>
+    <link href="https://codeqiao.github.io/2023/05/26/makefile/"/>
+    <id>https://codeqiao.github.io/2023/05/26/makefile/</id>
+    <published>2023-05-26T04:22:52.000Z</published>
+    <updated>2023-05-26T04:24:27.410Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;figure class=&quot;highlight makefile&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://codeqiao.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="makefile" scheme="https://codeqiao.github.io/categories/%E6%95%99%E7%A8%8B/makefile/"/>
+    
+    
+    <category term="工具" scheme="https://codeqiao.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="make" scheme="https://codeqiao.github.io/tags/make/"/>
+    
+  </entry>
   
   <entry>
     <title>数据库系统概述第七章</title>
