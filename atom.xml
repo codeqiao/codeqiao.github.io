@@ -77,40 +77,6 @@
   </entry>
   
   <entry>
-    <title>数据库系统概述第七章</title>
-    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/"/>
-    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/</id>
-    <published>2023-05-22T14:22:43.000Z</published>
-    <updated>2023-05-22T12:54:46.016Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;第七章 数据库设计&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;7-1-数据库设计概述&quot;&gt;7.1 数据库设计概述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;什么是数据库设计？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul class=&quot;lvl-0&quot;&gt;
-&lt;li</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
-    
-    
-    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据库系统概述第一章</title>
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%80%E7%AB%A0/</id>
@@ -145,23 +111,25 @@
   </entry>
   
   <entry>
-    <title>数据库系统概述第三章</title>
-    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
-    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/</id>
+    <title>数据库系统概述第七章</title>
+    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/"/>
+    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%83%E7%AB%A0/</id>
     <published>2023-05-22T14:22:43.000Z</published>
-    <updated>2023-05-22T07:57:14.360Z</updated>
+    <updated>2023-05-22T12:54:46.016Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;第三章 关系数据库标准语言SQL&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;第七章 数据库设计&lt;/h1&gt;
 &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;3-1-SQL概述&quot;&gt;3.1  SQL概述&lt;/h2&gt;
+&lt;h2 id=&quot;7-1-数据库设计概述&quot;&gt;7.1 数据库设计概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;什么是数据库设计？&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
-&lt;li class=&quot;lvl-2&quot;&gt;
-&lt;p&gt;SQL</summary>
+&lt;li</summary>
         
       
     
@@ -192,6 +160,38 @@
 &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;ul class=&quot;lvl-0&quot;&gt;
 &lt;li</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库系统概述第三章</title>
+    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/"/>
+    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E4%B8%89%E7%AB%A0/</id>
+    <published>2023-05-22T14:22:43.000Z</published>
+    <updated>2023-05-22T07:57:14.360Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;第三章 关系数据库标准语言SQL&lt;/h1&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;3-1-SQL概述&quot;&gt;3.1  SQL概述&lt;/h2&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li class=&quot;lvl-2&quot;&gt;
+&lt;p&gt;SQL</summary>
         
       
     
@@ -272,6 +272,33 @@
   </entry>
   
   <entry>
+    <title>数据库系统概述第六章</title>
+    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/"/>
+    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/</id>
+    <published>2023-05-22T14:22:43.000Z</published>
+    <updated>2023-05-22T15:07:36.829Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a class=&quot;link&quot;   href=&quot;https://blog.csdn.net/weixin_42214698/article/details/120754167&quot; &gt;(72条消息)</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数据库系统概述第八章</title>
     <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AB%E7%AB%A0/"/>
     <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AB%E7%AB%A0/</id>
@@ -288,6 +315,35 @@
 &lt;p&gt;SQL编程技术可以有效克服SQL语句实现复杂应用方面的不足，提高应用系统和数据库管理之间的互操作性。&lt;/p&gt;
 &lt;h2 id=&quot;8-1-嵌入式SQL&quot;&gt;8.1 嵌入式SQL&lt;/h2&gt;
 &lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库系统概述第十章</title>
+    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E7%AB%A0/"/>
+    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E7%AB%A0/</id>
+    <published>2023-05-22T14:22:43.000Z</published>
+    <updated>2023-05-22T14:18:52.333Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;数据库系统第十章&lt;/h1&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;10-1-事物的基本概念&quot;&gt;10.1</summary>
         
       
     
@@ -321,62 +377,6 @@
 &lt;p&gt;事务可以一个一个的串行执行，即每个时刻只有一个事务运行&lt;/p&gt;
 &lt;/li&gt;
 &lt;li</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
-    
-    
-    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据库系统概述第六章</title>
-    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/"/>
-    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%85%AD%E7%AB%A0/</id>
-    <published>2023-05-22T14:22:43.000Z</published>
-    <updated>2023-05-22T15:07:36.829Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a class=&quot;link&quot;   href=&quot;https://blog.csdn.net/weixin_42214698/article/details/120754167&quot; &gt;(72条消息)</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="数据库系统概述" scheme="https://codeqiao.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
-    
-    
-    <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据库系统概述第十章</title>
-    <link href="https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E7%AB%A0/"/>
-    <id>https://codeqiao.github.io/2023/05/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%AC%AC%E5%8D%81%E7%AB%A0/</id>
-    <published>2023-05-22T14:22:43.000Z</published>
-    <updated>2023-05-22T14:18:52.333Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;数据库系统第十章&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;10-1-事物的基本概念&quot;&gt;10.1</summary>
         
       
     
@@ -488,7 +488,7 @@
     <link href="https://codeqiao.github.io/2023/03/14/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
     <id>https://codeqiao.github.io/2023/03/14/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</id>
     <published>2023-03-14T14:22:43.000Z</published>
-    <updated>2023-03-28T04:24:15.213Z</updated>
+    <updated>2023-05-22T07:57:05.434Z</updated>
     
     
       
