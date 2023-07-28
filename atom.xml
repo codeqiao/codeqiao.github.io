@@ -6,7 +6,7 @@
   <link href="https://codeqiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://codeqiao.github.io/"/>
-  <updated>2023-07-23T10:12:15.315Z</updated>
+  <updated>2023-07-28T00:45:25.442Z</updated>
   <id>https://codeqiao.github.io/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="https://codeqiao.github.io/2023/07/23/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://codeqiao.github.io/2023/07/23/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2023-07-23T09:58:05.000Z</published>
-    <updated>2023-07-23T10:12:15.315Z</updated>
+    <updated>2023-07-28T00:45:25.442Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;知识点1-打印数组&quot;&gt;知识点1</summary>
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h3 id=&quot;知识点1-打印数组&quot;&gt;知识点1</summary>
         
       
     
@@ -36,7 +37,9 @@
     
     <category term="大数据学习" scheme="https://codeqiao.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="JAVA核心" scheme="https://codeqiao.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0/JAVA%E6%A0%B8%E5%BF%83/"/>
+    <category term="大数据基础" scheme="https://codeqiao.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="JAVA核心基础" scheme="https://codeqiao.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80/JAVA%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80/"/>
     
     
     <category term="笔记" scheme="https://codeqiao.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
