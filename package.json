@@ -3,8 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "hexo generate",
-    "serve": "hexo server"
+    "build": "node tools/validate-collections.js && node tools/validate-knowledge.js && hexo clean && hexo generate && node tools/verify-build.js",
+    "serve": "node tools/validate-collections.js && node tools/validate-knowledge.js && hexo clean && hexo server",
+    "test": "node --test tests/*.test.js"
   },
   "dependencies": {
     "cheerio": "^1.2.0",
@@ -20,6 +21,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-stellar": "^1.33.0",
     "hexo-util": "4.0.0",
+    "js-yaml": "^5.5.0",
     "probe-image-size": "^7.5.0"
   },
   "hexo": {

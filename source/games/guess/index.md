@@ -1,5 +1,7 @@
 ---
 title: 猜数字
+description: 试试用几次猜中 1 到 100 之间的数字。
+order: 1
 date: 2026-11-11 10:00:00
 menu_id: games
 ---

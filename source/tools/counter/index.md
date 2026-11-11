@@ -1,5 +1,7 @@
 ---
 title: 字数统计
+description: 输入或粘贴文字，实时查看字符数量。
+order: 1
 date: 2026-11-11 10:00:00
 menu_id: tools
 ---

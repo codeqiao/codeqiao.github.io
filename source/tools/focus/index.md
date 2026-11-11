@@ -1,5 +1,7 @@
 ---
 title: 专注计时
+description: 给自己 25 分钟，专心做一件事。
+order: 2
 date: 2026-11-11 10:00:00
 menu_id: tools
 ---
