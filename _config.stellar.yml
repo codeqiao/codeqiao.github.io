@@ -9,7 +9,7 @@ footer:
 inject:
   head:
     - '<link rel="stylesheet" href="/custom.css">'
-    - '<script defer src="/custom.js"></script>'
+    - '<script defer src="/custom.js?v=cat-v3"></script>'
     - '<script defer src="/interactive.js"></script>'
 menubar:
   items:

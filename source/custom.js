@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.body.append(pet);
   // Load the 3D renderer only on the homepage; the inline illustration is a fallback.
-  const moduleUrl = new URL('generated/pet-3d.js', blogLink.href).href;
-  import(moduleUrl).then(module => {
-    pet3d = module.mountPet(pet);
-    pet3d.setMood(moods[moodIndex].name);
+  const moduleUrl = new URL('generated/pet-3d.js?v=cat-v3', blogLink.href).href;
+  import(moduleUrl).then(module => module.mountPet(pet)).then(instance => {
+    pet3d = instance;
+    if (moodIndex) pet3d.setMood(moods[moodIndex].name);
     window.addEventListener('pagehide', () => pet3d.dispose(), { once: true });
   }).catch(() => { /* Keep the lightweight fallback if WebGL is unavailable. */ });
 });
