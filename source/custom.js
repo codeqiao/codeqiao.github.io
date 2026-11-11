@@ -1,4 +1,4 @@
-// Enhance the theme's post index while leaving generated article pages intact.
+// Enhance the post index and add the companion on each page.
 document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = [...document.querySelectorAll('.menu .ui-collection__item')];
   const currentPath = decodeURI(window.location.pathname).replace(/index\.html$/, '');
@@ -16,16 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const list = document.querySelector('.l_body.index .post-list.post');
-  if (!list || !document.querySelector('.navbar nav a:first-child.active')) return;
-
-  const intro = document.createElement('section');
-  intro.className = 'personal-intro';
-  intro.innerHTML = `<div class="intro-copy"><h1>写下来，<br>让想法慢慢生长</h1><p class="intro-description">这里记录学习中的发现、生活里的思考，<br>也分享一些实用的 Skills 和有趣的小工具。</p></div>`;
-  list.before(intro);
-  const label = document.createElement('div');
-  label.className = 'journal-label';
-  label.innerHTML = '<h2>最近的记录</h2>';
-  list.before(label);
+  if (list && document.querySelector('.navbar nav a:first-child.active')) {
+    const intro = document.createElement('section');
+    intro.className = 'personal-intro';
+    intro.innerHTML = `<div class="intro-copy"><h1>写下来，<br>让想法慢慢生长</h1><p class="intro-description">这里记录学习中的发现、生活里的思考，<br>也分享一些实用的 Skills 和有趣的小工具。</p></div>`;
+    list.before(intro);
+    const label = document.createElement('div');
+    label.className = 'journal-label';
+    label.innerHTML = '<h2>最近的记录</h2>';
+    list.before(label);
+  }
 
   const pet = document.createElement('button');
   pet.type = 'button';
@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => heart.remove(), 1200);
   });
   document.body.append(pet);
-  // Load the 3D renderer only on the homepage; the inline illustration is a fallback.
+  // Load the 3D renderer on each page; the inline illustration is a fallback.
   const moduleUrl = new URL('generated/pet-3d.js?v=cat-v3', blogLink.href).href;
   import(moduleUrl).then(module => module.mountPet(pet)).then(instance => {
     pet3d = instance;
     if (moodIndex) pet3d.setMood(moods[moodIndex].name);
-    window.addEventListener('pagehide', () => pet3d.dispose(), { once: true });
+    window.addEventListener('pagehide', event => { if (!event.persisted) pet3d.dispose(); });
   }).catch(() => { /* Keep the lightweight fallback if WebGL is unavailable. */ });
 });
 
