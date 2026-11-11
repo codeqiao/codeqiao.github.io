@@ -20,3 +20,5 @@
 @media(max-width:800px){#restStatus{display:block}}
 
 .camera-controls{position:absolute;top:110px;right:24px;display:flex;gap:6px}.camera-controls button{border:1px solid #fff;border-radius:9px;padding:8px 11px;background:#fffdf1e8;color:#34655f;font-size:12px}.camera-controls button:focus-visible{outline:2px solid #246f63;outline-offset:2px}canvas:focus-visible{outline:3px solid #f4ba64;outline-offset:-3px}@media(max-width:800px){.camera-controls{top:76px;right:8px}.camera-controls button{padding:7px 9px}}
+
+.game-back{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;color:#416f61;text-decoration:none;font-size:12px}.game-back:hover{text-decoration:underline}.game-back:focus-visible{outline:2px solid #246f63;outline-offset:3px;border-radius:3px}@media(max-width:800px){header{gap:6px}.game-back{font-size:15px}.game-back span{display:none}}

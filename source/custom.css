@@ -24,3 +24,5 @@
 @media(max-width:720px){.stats-page{margin:8px 0 65px}.stats-page .stats-heading{gap:12px;align-items:baseline}.stats-page .stats-heading span{font-size:10px;white-space:nowrap}.visit-chart{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}.visit-chart svg{min-width:580px}.ranking-header a{min-width:0;overflow-wrap:anywhere}.ranking-header span{flex:none}}
 
 @media(max-width:720px){.visit-chart{overflow:visible}.visit-chart svg{min-width:0;width:100%}}
+
+.game-row{grid-template-columns:56px minmax(0,1fr) 28px;gap:20px;padding:24px 8px}.game-icon{width:52px;height:52px;display:grid;place-items:center;border:1px solid #e9e9e6;border-radius:14px;background:#f7f7f5;overflow:hidden}.game-icon img{display:block;width:100%;height:100%;object-fit:contain}.game-icon-fallback{font:500 21px/1 "Songti SC",serif;color:#555}.game-row .item-content{min-width:0}.game-row .item-content>span{line-height:1.7}@media(max-width:680px){.game-row{grid-template-columns:46px minmax(0,1fr) 22px;gap:14px;padding:20px 3px}.game-icon{width:44px;height:44px;border-radius:12px}.game-row .item-content>span{font-size:12px}}

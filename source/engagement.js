@@ -163,7 +163,8 @@
   section.className = 'like-section';
   const label = document.createElement('span');
   label.className = 'like-label';
-  label.textContent = localPreview ? '喜欢这篇内容？（本地预览）' : '喜欢这篇内容？';
+  const likePrompt = path.startsWith('/games/') ? '喜欢这个游戏？' : path.startsWith('/tools/') ? '喜欢这个工具？' : path.startsWith('/skills/') ? '喜欢这个 Skill？' : '喜欢这篇内容？';
+  label.textContent = localPreview ? likePrompt + '（本地预览）' : likePrompt;
   const button = document.createElement('button');
   button.className = 'like-button';
   button.type = 'button';

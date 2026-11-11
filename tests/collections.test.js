@@ -33,3 +33,17 @@ test('缺少描述的内容不能通过校验', t => {
   fs.writeFileSync(path.join(dir, 'index.md'), '---\ntitle: Example\n---\n');
   assert.throws(() => readCollection(root, 'skills'), /description/);
 });
+
+test('游戏图标自动发现并为未提供图标的游戏提供文字兜底', t => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'site-games-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const dir = path.join(root, 'source', 'games');
+  for (const [slug, title, icon] of [['island', '小岛', true], ['puzzle', '谜题', false]]) {
+    const game = path.join(dir, slug); fs.mkdirSync(game, { recursive: true });
+    fs.writeFileSync(path.join(game, 'index.md'), '---\ntitle: ' + title + '\ndescription: test\nmenu_id: games\n---\n');
+    if (icon) fs.writeFileSync(path.join(game, 'icon.svg'), '<svg/>');
+  }
+  const html = renderCollection(readCollection(root, 'games'), 'games');
+  assert.match(html, /src="island\/icon\.svg"/);
+  assert.match(html, /game-icon-fallback[^>]*>谜/);
+});

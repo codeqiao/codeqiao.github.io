@@ -12,7 +12,7 @@ menu_id: skills
 <p>适用于栖点网站的博客、笔记、Skills、小游戏、工具及其他内容。它会遵循知识库关联、自动列表和本地预览规则。</p>
 <p><a href="./SKILL.md">查看或下载 SKILL.md ↗</a></p>
 <p>让支持 Skill 的 Agent 阅读上面的文件，并把它保存到本地 Skill 目录下的 <code>qidian-site/SKILL.md</code>。之后可以对 Agent 说：“使用 qidian-site，帮我添加一篇博客”或“帮我加入这个小游戏”。</p>
-<p>维护网站时需要访问网站源码仓库。变更会先在本地预览，只有站主明确同意本次上线后才发布。更新 Skill 时以仓库中的 <code>skills/qidian-site/SKILL.md</code> 为准。</p>
+<p>维护网站时需要访问网站源码仓库。变更会先经过本地检查，再按站主的持续授权自动上线；也可以要求某次只预览。更新 Skill 时以仓库中的 <code>skills/qidian-site/SKILL.md</code> 为准。</p>
 <a class="back-to-list" href="../">← 返回 Skills 列表</a>
 </div>
 </div>
