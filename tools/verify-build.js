@@ -6,6 +6,9 @@ const cheerio = require('cheerio');
 const { COLLECTIONS, readCollection } = require('../lib/collections');
 
 try {
+  const skillSource = fs.readFileSync('skills/qidian-site/SKILL.md', 'utf8');
+  const skillDownload = fs.readFileSync('public/skills/qidian-site/SKILL.md', 'utf8');
+  if (skillDownload !== skillSource) throw new Error('网站发布的 Skill 与仓库源文件不一致');
   for (const collection of COLLECTIONS) {
     const entries = readCollection(process.cwd(), collection);
     const index = path.join('public', collection, 'index.html');

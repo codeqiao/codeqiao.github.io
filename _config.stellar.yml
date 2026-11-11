@@ -1,6 +1,6 @@
 logo:
   avatar: ''
-  title: '[留白](/)'
+  title: '[栖点](/)'
   subtitle: 记录 · 思考 · 分享
 article:
   license: false
@@ -11,6 +11,8 @@ inject:
     - '<link rel="stylesheet" href="/custom.css">'
     - '<script defer src="/custom.js?v=cat-v4"></script>'
     - '<script defer src="/interactive.js"></script>'
+    - '<script defer src="/engagement-config.js"></script>'
+    - '<script defer src="/engagement.js"></script>'
 menubar:
   items:
     - id: post
@@ -36,3 +38,8 @@ menubar:
 
 
 
+    - id: stats
+      theme: '#333333'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20h16M6 17v-5m6 5V5m6 12V9"/></svg>'
+      title: 站点数据
+      url: /stats/

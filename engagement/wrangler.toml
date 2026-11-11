@@ -1,0 +1,11 @@
+name = "liubai-likes"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://codeqiao.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "liubai-likes"
+database_id = "6a01585e-8ea8-4b82-b6e0-45215c09db48"
