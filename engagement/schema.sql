@@ -10,3 +10,14 @@ SELECT path, COUNT(*) AS likes FROM likes GROUP BY path;
 
 
 CREATE TABLE IF NOT EXISTS daily_views (day TEXT PRIMARY KEY, views INTEGER NOT NULL DEFAULT 0) WITHOUT ROWID;
+
+CREATE TABLE IF NOT EXISTS comments (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  path TEXT NOT NULL,
+  nickname TEXT NOT NULL,
+  body TEXT NOT NULL,
+  client_hash TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS comments_path_id ON comments (path, id DESC);
+CREATE INDEX IF NOT EXISTS comments_client_time ON comments (client_hash, created_at);

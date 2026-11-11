@@ -8,11 +8,12 @@ footer:
   content: '本站使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题构建。'
 inject:
   head:
-    - '<link rel="stylesheet" href="/custom.css">'
+    - '<link rel="stylesheet" href="/custom.css?v=comments-v1">'
     - '<script defer src="/custom.js?v=cat-v4"></script>'
     - '<script defer src="/interactive.js"></script>'
     - '<script defer src="/engagement-config.js"></script>'
     - '<script defer src="/engagement.js"></script>'
+    - '<script defer src="/comments.js?v=comments-v1"></script>'
 menubar:
   items:
     - id: post
