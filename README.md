@@ -5,8 +5,8 @@
 ## 日常更新
 
 - 文章和笔记：在 `source/_posts/` 添加或修改 Markdown。笔记使用 `categories: 笔记`。已有示例可作为格式参考。
-- Skills：编辑 `source/skills/index.md`，按需加入说明与资源链接。
-- 小游戏和工具：对应入口在 `source/games/`、`source/tools/`，实际交互代码在 `source/interactive.js`。
+- Skills：在 `source/skills/` 新建详情页，并在 `source/skills/index.md` 中添加列表链接。
+- 小游戏和工具：在 `source/games/`、`source/tools/` 中维护列表与独立详情页，交互代码在 `source/interactive.js`。
 - 网站名称、描述、URL：修改 `_config.yml`；主题配置与导航：修改 `_config.stellar.yml`；外观与首页交互：修改 `source/custom.css` 和 `source/custom.js`。
 
 使用 Node.js 24 和 pnpm 11，在项目根目录执行：
