@@ -17,3 +17,4 @@ prismjs:
 
 skip_render:
   - lab/**
+  - games/sunny-bay/play/**
