@@ -7,6 +7,7 @@
 - 文章和笔记：在 `source/_posts/` 添加或修改 Markdown。笔记使用 `categories: 笔记`。已有示例可作为格式参考。
 - Skills、小游戏和工具：分别在 `source/skills/`、`source/games/`、`source/tools/` 下新增一个小写英文目录，目录中放 `index.md`。构建时根据详情页的元信息自动生成对应列表，无需修改栏目首页。交互代码可放在 `source/interactive.js` 或按功能拆分。
 - 网站名称、描述、URL：修改 `_config.yml`；主题配置与导航：修改 `_config.stellar.yml`；外观与首页交互：修改 `source/custom.css` 和 `source/custom.js`。
+- 首页 3D 小猫：模型和动画代码在 `client/pet-3d.js`，构建时生成按需加载的浏览器文件；不支持 WebGL 时会显示简洁的备用图形。
 
 使用 Node.js 24 和 pnpm 11，在项目根目录执行：
 

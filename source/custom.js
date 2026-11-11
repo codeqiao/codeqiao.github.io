@@ -39,9 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'surprised', text: '喵？' }
   ];
   let moodIndex = 0;
+  let pet3d;
   pet.addEventListener('click', () => {
     moodIndex = (moodIndex + 1) % moods.length;
     pet.dataset.mood = moods[moodIndex].name;
+    pet3d?.setMood(moods[moodIndex].name);
     pet.querySelector('.site-pet-caption').textContent = moods[moodIndex].text;
     pet.querySelector('.pet-heart')?.remove();
     const heart = document.createElement('span');
@@ -52,6 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => heart.remove(), 1200);
   });
   document.body.append(pet);
+  // Load the 3D renderer only on the homepage; the inline illustration is a fallback.
+  const moduleUrl = new URL('generated/pet-3d.js', blogLink.href).href;
+  import(moduleUrl).then(module => {
+    pet3d = module.mountPet(pet);
+    pet3d.setMood(moods[moodIndex].name);
+    window.addEventListener('pagehide', () => pet3d.dispose(), { once: true });
+  }).catch(() => { /* Keep the lightweight fallback if WebGL is unavailable. */ });
 });
 
 
