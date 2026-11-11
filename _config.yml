@@ -1,0 +1,19 @@
+title: 留白
+subtitle: 记录 · 思考 · 分享
+description: 一个持续生长的个人空间
+author: 站长
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://codeqiao.github.io
+root: /
+permalink: :year/:month/:day/:title/
+source_dir: source
+public_dir: public
+theme: stellar
+highlight:
+  enable: false
+prismjs:
+  enable: false
+
+skip_render:
+  - lab/**

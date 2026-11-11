@@ -1,0 +1,42 @@
+logo:
+  avatar: ''
+  title: '[留白](/)'
+  subtitle: 记录 · 思考 · 分享
+article:
+  license: false
+footer:
+  content: '本站使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题构建。'
+inject:
+  head:
+    - '<link rel="stylesheet" href="/custom.css">'
+    - '<script defer src="/custom.js"></script>'
+menubar:
+  items:
+    - id: post
+      theme: '#333333'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8M12 8v8"/></svg>'
+      title: 博客
+      url: /
+    - id: skills
+      theme: '#333333'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8M12 8v8"/></svg>'
+      title: Skills
+      url: /skills/
+    - id: notes
+      theme: '#333333'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8M12 8v8"/></svg>'
+      title: 笔记
+      url: /categories/笔记/
+    - id: games
+      theme: '#333333'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8M12 8v8"/></svg>'
+      title: 小游戏
+      url: /games/
+    - id: tools
+      theme: '#333333'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8M12 8v8"/></svg>'
+      title: 工具
+      url: /tools/
+
+
+
