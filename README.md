@@ -70,11 +70,11 @@ menu_id: skills
 
 仓库和站点公开，提交前不要放入密码、令牌或不希望公开的私人信息。首次发布前，当前文章和个人介绍均为示例，建议逐步替换。
 
-## 访问统计与点赞（待上线）
+## 访问统计与点赞
 
 - Cloudflare Web Analytics 项目已配置 `codeqiao.github.io`。正式接入后在 Cloudflare 控制台的 Web Analytics 查看浏览量、访问量和页面表现；本地页面不会计入。
 - 文章、Skills、游戏和工具的详情页可以显示点赞。浏览器生成随机标识并保存在本地，点赞服务存储页面路径、随机标识及时间，用于同一浏览器对同一页面去重。清除浏览数据或更换设备后可能再次点赞，匿名机制不能防止恶意刷赞，也不会识别真实人数。
-- 点赞后端源码和建表语句在 `engagement/`；站点配置在 `source/engagement-config.js`。上线前必须准备 Worker、D1 绑定和服务地址，并测试跨页面计数、重复点赞和异常响应。不要把 API 密钥或账户凭证写入仓库。
+- 点赞后端源码和建表语句在 `engagement/`；站点配置在 `source/engagement-config.js`。调整 Worker、D1 绑定或服务地址时，应测试跨页面计数、重复点赞和异常响应。不要把 API 密钥或账户凭证写入仓库。
 - 站主可在 Cloudflare 控制台进入 D1 数据库 `liubai-likes` 的 Console，运行 `SELECT * FROM like_totals ORDER BY likes DESC;`，按页面路径查看点赞数。
 - 本地预览可在详情页地址后加 `?preview_likes=1`，例如 `/games/guess/?preview_likes=1`；数字只保存在当前浏览器，不是真实访客数据。
 - 地址依赖页面路径：改文章 slug 或页面路径会使原点赞留在旧路径，迁移前应先规划数据映射和备份。
@@ -82,4 +82,4 @@ menu_id: skills
 
 - 公开的站点数据页展示最近 30 天每日浏览量折线图和点赞前 10 名条形图；日期按北京时间，每次页面加载计一次，不能代表独立访客。自定义统计从启用后开始，与 Cloudflare 后台口径可能不同。
 - 访问计数包括站主自己的浏览，重复加载也会计数；每次产生一次 D1 写入，应留意免费额度；公开统计可能受恶意请求影响。
-- 部署前执行最新版 engagement/schema.sql，创建 daily_views 表，保留原有点赞数据。文章列表批量查询点赞数，统计页内容标题由构建自动生成；本地预览地址为 /stats/?preview_likes=1 和 /?preview_likes=1；折线图使用明确标注的示例数据，不代表真实浏览量。
+- 数据库结构更新时执行最新版 engagement/schema.sql，保留原有点赞数据。文章列表批量查询点赞数，统计页内容标题由构建自动生成；本地预览地址为 /stats/?preview_likes=1 和 /?preview_likes=1；折线图使用明确标注的示例数据，不代表真实浏览量。
