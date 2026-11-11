@@ -10,6 +10,7 @@ inject:
   head:
     - '<link rel="stylesheet" href="/custom.css">'
     - '<script defer src="/custom.js"></script>'
+    - '<script defer src="/interactive.js"></script>'
 menubar:
   items:
     - id: post
